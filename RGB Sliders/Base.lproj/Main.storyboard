@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="o2K-JG-dpF">
-                                <rect key="frame" x="18" y="206" width="284" height="31"/>
-                                <color key="tintColor" red="1" green="0.0" blue="0.02053295671066202" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="updateBackGroundColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Lfd-m3-Zqz"/>
-                                </connections>
-                            </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xll-n5-gef">
                                 <rect key="frame" x="18" y="276" width="284" height="31"/>
                                 <connections>
@@ -45,9 +38,16 @@
                                 <rect key="frame" x="124" y="409" width="73" height="30"/>
                                 <state key="normal" title="Open"/>
                                 <connections>
-                                    <segue destination="EHn-Wh-AKC" kind="show" id="Aet-t7-3t9"/>
+                                    <segue destination="EHn-Wh-AKC" kind="show" identifier="openColor" id="Aet-t7-3t9"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="o2K-JG-dpF">
+                                <rect key="frame" x="18" y="202" width="284" height="31"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.02053295671066202" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="updateBackGroundColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Lfd-m3-Zqz"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="-115"/>
+            <point key="canvasLocation" x="986" y="-125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qPc-Tf-fAR">
@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSd-ot-bBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="-115"/>
+            <point key="canvasLocation" x="1381" y="-125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yt4-c8-kOG">

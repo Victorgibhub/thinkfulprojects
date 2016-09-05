@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5789ED821D7D294600BDA7BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789ED811D7D294600BDA7BD /* AppDelegate.swift */; };
 		5789ED841D7D294600BDA7BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789ED831D7D294600BDA7BD /* ViewController.swift */; };
-		5789ED871D7D294600BDA7BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5789ED851D7D294600BDA7BD /* Main.storyboard */; };
+		5789ED871D7D294600BDA7BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5789ED851D7D294600BDA7BD /* Main.storyboard */; settings = {ASSET_TAGS = (openColor, ); }; };
 		5789ED891D7D294600BDA7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5789ED881D7D294600BDA7BD /* Assets.xcassets */; };
 		5789ED8C1D7D294600BDA7BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5789ED8A1D7D294600BDA7BD /* LaunchScreen.storyboard */; };
 		5789ED971D7D294600BDA7BD /* RGB_SlidersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5789ED961D7D294600BDA7BD /* RGB_SlidersTests.swift */; };
@@ -187,6 +187,9 @@
 		5789ED761D7D294600BDA7BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					openColor,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Victor Lo";
@@ -482,6 +485,7 @@
 				5789EDA81D7D294600BDA7BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5789EDA91D7D294600BDA7BD /* Build configuration list for PBXNativeTarget "RGB SlidersTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +494,7 @@
 				5789EDAB1D7D294600BDA7BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5789EDAC1D7D294600BDA7BD /* Build configuration list for PBXNativeTarget "RGB SlidersUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +503,7 @@
 				5789EDAE1D7D294600BDA7BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
