@@ -45,7 +45,7 @@
                                 <rect key="frame" x="18" y="202" width="284" height="31"/>
                                 <color key="tintColor" red="1" green="0.0" blue="0.02053295671066202" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="updateBackGroundColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Lfd-m3-Zqz"/>
+                                    <action selector="updateBackGroundColor" destination="BYZ-38-t0r" eventType="valueChanged" id="lfg-Un-gyp"/>
                                 </connections>
                             </slider>
                         </subviews>
@@ -57,7 +57,7 @@
                         <outlet property="blueSlider" destination="Xll-n5-gef" id="TRF-VW-0Cg"/>
                         <outlet property="colorSquare" destination="8gm-Wa-ceX" id="Pzi-1t-QpE"/>
                         <outlet property="greenSlider" destination="xSI-8K-r50" id="PCv-8I-1Bt"/>
-                        <outlet property="purpleSliders" destination="o2K-JG-dpF" id="CA1-7a-kPF"/>
+                        <outlet property="redSliders" destination="o2K-JG-dpF" id="PlA-hm-ktZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

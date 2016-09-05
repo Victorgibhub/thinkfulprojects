@@ -10,45 +10,52 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var purpleSliders: UISlider!
+    
+    @IBOutlet weak var redSliders: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
     @IBOutlet weak var greenSlider: UISlider!
     
     @IBOutlet weak var colorSquare: UIView!
     @IBAction func updateBackGroundColor () {
+let defaults = NSUserDefaults.standardUserDefaults()
+       defaults.setFloat(redSliders.value, forKey: "red")
+        defaults.setFloat(blueSlider.value, forKey: "blue")
+        defaults.setFloat(greenSlider.value, forKey: "green")
+        defaults.synchronize()
     
     
-    let purple = CGFloat(purpleSliders.value) //i used purple just to test if the color changes in any way.
-    let blue = CGFloat(blueSlider.value)
-    let green = CGFloat(greenSlider.value)
+let red = CGFloat(redSliders.value)
+let blue = CGFloat(blueSlider.value)
+let green = CGFloat(greenSlider.value)
     
       colorSquare.layer.borderColor = UIColor.blackColor().CGColor
         
      colorSquare.layer.borderWidth = 1
         
-     colorSquare.backgroundColor = UIColor(red: purple, green: green, blue: blue, alpha: 1)
+     colorSquare.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
         
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "openColor" {
+        
+if (segue.identifier) == "openColor" {
             
-       let newViewController = segue.destinationViewController
-        newViewController.view.backgroundColor = colorSquare.backgroundColor
+let newViewController = segue.destinationViewController
+           newViewController.view.backgroundColor = colorSquare.backgroundColor
             
         }
         
-        
-        
     }
-    
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+let defaults = NSUserDefaults.standardUserDefaults()
+        redSliders.value = defaults.floatForKey("red")
+        blueSlider.value = defaults.floatForKey("blue")
+        greenSlider.value = defaults.floatForKey("green")
         
         updateBackGroundColor()
     }
